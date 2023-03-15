@@ -12,5 +12,5 @@ public interface IProductService {
 
     List<Product> getProducts(Date date);
 
-
+    List<Product> getAllProducts();
 }

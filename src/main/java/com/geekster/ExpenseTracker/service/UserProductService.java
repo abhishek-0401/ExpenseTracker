@@ -113,6 +113,7 @@ public class UserProductService implements IUserService,IProductService,IExpense
         expense.setUserId(newExpense.getUserId());
         expense.setProductId(newExpense.getProductId());
         expense.setExpenseDate(newExpense.getExpenseDate());
+        expenseRepository.save(expense);
     }
 
     @Override
@@ -134,5 +135,9 @@ public class UserProductService implements IUserService,IProductService,IExpense
             }
         }
         return responseList;
+    }
+    @Override
+    public List<Product> getAllProducts() {
+        return productRepository.findAll();
     }
 }

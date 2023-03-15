@@ -31,4 +31,8 @@ public class ProductController {
         Date first = Date.valueOf(date);
         return service.getProducts(first);
     }
+    @GetMapping("/get-all-products")
+    public List<Product> getProducts(){
+        return service.getAllProducts();
+    }
 }
