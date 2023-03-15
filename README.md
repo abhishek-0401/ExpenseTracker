@@ -75,6 +75,7 @@ Along with that the next step is to provide some of the validations on the field
   > http://localhost:8080/api/v1
   
   End points:
+  
     - ##### /get-expenses
     - ##### /add-expense
     - ##### /update-expense
